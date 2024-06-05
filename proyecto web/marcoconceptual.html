@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--BootstrapCSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>TecnoSistemas</title>
+    <!--Estilos personalizados-->
+    <link rel="stylesheet" href="css externo/style.css">
+    <style>
+        .container-lg {
+            margin-top: 7rem;
+            margin-bottom: 7rem;
+        }
+        .content-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .content-section h2 {
+            font-size: 1.75rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .index-section {
+            margin-bottom: 30px;
+        }
+        .index-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .index-section li {
+            margin-bottom: 10px;
+        }
+        .index-section a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .index-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!--Head-->
+    <nav id="navbar" class="navbar navbar-dark navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="index.html">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="30" stroke="black" stroke-width="2" fill="#ffc107" />
+                    <path d="M20 32 L44 32 M32 20 L32 44" stroke="black" stroke-width="2" />
+                    <circle cx="32" cy="32" r="4" fill="black" />
+                </svg>
+                <span class="logo-text">TecnoSistemas</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title logo-text" id="offcanvasDarkNavbarLabel">TecnoSistemas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Te Puede Interesar
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="estadodelarte.html">Estado Del Arte</a></li>
+                          <li><a class="dropdown-item" href="marcoteorico.html">Marco Teorico</a></li>
+                          <li><a class="dropdown-item" href="marcoconceptual.html">Marco Conceptual</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="marcogeografico.html">Marco Geografico</a></li>
+                          <li><a class="dropdown-item" href="metodologico.html">Marco Metodologico</a></li>
+                        </ul>
+                      </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            NOSOTROS
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="quienessomos.html">Quienes somos</a></li>
+                            <li><a class="dropdown-item" href="contactenos.html"> Contactenos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="politicas.html"> Politica De Privacidad </a></li>
+                            <li><a class="dropdown-item" href="webgrafia.html"> Webgrafia   </a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            QUE NECESITAS
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-header"> <h6>Vision</h6> </li>                              
+                            <li><a class="dropdown-item" href="alcance.html">Alcance</a></li>                          
+                            <li class="dropdown-header"> <h6>Que Nos Detiene</h6> </li>  
+                            <li><a class="dropdown-item" href="porblemas.html">Problemas</a></li>
+                            <li><a class="dropdown-item" href="pro.html">justificacion</a></li>                          
+                            <li class="dropdown-header" id="uni"> <h6>Universidades</h6> </li>    
+                            <li><a class="dropdown-item" href="icesi.html">Icesi</a></li>
+                            <li><a class="dropdown-item" href="jeverian.html">Javeriana</a></li>                          
+                            <li><a class="dropdown-item" href="univalle.html">  Universidad del valle </a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              QUE DESEAMOS
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="desafios.html"> Introduccion</a></li>
+                              <li><a class="dropdown-item" href="plantiamiento.html"> Planteamiento</a></li>
+                              <li><a class="dropdown-item" href="conclusiones.html"> Conclusiones</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="encuesta.html">Encuesta</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li class="dropdown-header"> <h6>Objetivos</h6> </li>
+                              <li><a class="dropdown-item" href="especifico.html"> Especifico</a></li>
+                              <li><a class="dropdown-item" href="generales.html"> Generales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+       <!--Content-->
+       <div class="container-lg mt-9 mb-7">
+        <div class="content-section">
+
+            <h1>Marco Conceptual</h1>
+            <div class="index-section">
+                <h2>Índice</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Concepto</th>
+                                <th>Enlace</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Scrum</td>
+                                <td><a href="#scrum">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>COCOMO</td>
+                                <td><a href="#cocomo">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Internet de las Cosas</td>
+                                <td><a href="#iot">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Algoritmos</td>
+                                <td><a href="#algoritmos">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Lógica</td>
+                                <td><a href="#logica">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Big Data</td>
+                                <td><a href="#bigdata">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Redes Neuronales</td>
+                                <td><a href="#redes-neuronales">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Lógica Binaria</td>
+                                <td><a href="#logica-binaria">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Gramáticas de Lenguajes Formales</td>
+                                <td><a href="#gramaticas">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Teorema de Bayes</td>
+                                <td><a href="#teorema-bayes">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Computación en la Nube</td>
+                                <td><a href="#cloud-computing">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Cibercultura</td>
+                                <td><a href="#cibercultura">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Estadística</td>
+                                <td><a href="#estadistica">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Paradigmas de Programación</td>
+                                <td><a href="#paradigmas-programacion">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Data Analytics</td>
+                                <td><a href="#data-analytics">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Biotecnología</td>
+                                <td><a href="#biotecnologia">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Inteligencia Artificial</td>
+                                <td><a href="#ia">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Sistemas Operativos</td>
+                                <td><a href="#sistemas-operativos">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Álgebra</td>
+                                <td><a href="#algebra">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Inferencia Estadística</td>
+                                <td><a href="#inferencia-estadistica">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Arquitectura de Computadores</td>
+                                <td><a href="#arquitectura-computadores">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Procesos Gerenciales</td>
+                                <td><a href="#procesos-gerenciales">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Desarrollo de Software</td>
+                                <td><a href="#desarrollo-software">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Lógica de las Computadoras</td>
+                                <td><a href="#logica-computadoras">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ingeniería de Software</td>
+                                <td><a href="#ingenieria-software">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Distribución Muestral</td>
+                                <td><a href="#distribucion-muestral">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Redes Sociales</td>
+                                <td><a href="#redes-sociales">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Máquina de Estado Finito</td>
+                                <td><a href="#maquina-estado-finito">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Álgebra Booleana</td>
+                                <td><a href="#algebra-booleana">Ir al contenido</a></td>
+                            </tr>
+                            <tr>
+                                <td>Sistema de Gestión de Bases de Datos</td>
+                                <td><a href="#sgbd">Ir al contenido</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                                    <div id="scrum">
+                <h2>Scrum</h2>
+                <p>Scrum es una metodología ágil de gestión de proyectos que se caracteriza por su enfoque en la comunicación constante con el cliente, el desarrollo por etapas y la adaptabilidad del proceso. Sus autores fueron Jeff Sutherland y Ken Schwaber, formalizado por primera vez en 1995.</p>
+            </div>
+            <div id="cocomo">
+                <h2>COCOMO</h2>
+                <p>COCOMO es un modelo utilizado para estimar el costo, esfuerzo y tiempo requeridos en el desarrollo de software. Su autor, Barry Boehm, es un destacado ingeniero de software y profesor universitario estadounidense, reconocido por su trabajo en ingeniería de software, especialmente en modelos de costos de desarrollo de software. Es conocido por su obra "Software Engineering Economics" y por desarrollar el Modelo de Costos de Boehm.</p>
+            </div>
+            <div id="iot">
+                <h2>Internet de las Cosas</h2>
+                <p>El Internet de las Cosas se refiere a la interconexión de objetos cotidianos a Internet. Su autor, Kevin Ashton, un ingeniero británico, acuñó el término y es considerado uno de los pioneros en este campo, contribuyendo significativamente al desarrollo y la popularización de esta tecnología que conecta objetos cotidianos a Internet.</p>
+            </div>
+            <div id="algoritmos">
+                <h2>Algoritmos</h2>
+                <p>Los algoritmos son un conjunto finito de pasos ordenados para realizar una tarea o resolver un problema. Su autor, Muhammad ibn Musa al-Khwarizmi, fue un matemático, astrónomo y geógrafo persa que vivió en el siglo IX. Es conocido por sus contribuciones a las matemáticas y la astronomía, especialmente por su trabajo en el desarrollo del álgebra y la introducción de los algoritmos en el mundo occidental.</p>
+            </div>
+            <div id="logica">
+                <h2>Lógica</h2>
+                <p>La lógica es la disciplina que estudia los principios del razonamiento válido y la inferencia. Su autor, Aristóteles, un filósofo griego antiguo, es considerado uno de los pensadores más influyentes en la historia de la filosofía occidental. Fundó la escuela de pensamiento conocida como el Aristotelismo y sus escritos abarcan diversos campos del conocimiento, incluyendo la lógica, la ética, la metafísica, la política, la biología y la física.</p>
+            </div>
+            <div id="bigdata">
+                <h2>Big Data</h2>
+                <p>Big Data se refiere a un conjunto de datos que son tan grandes o complejos que los enfoques tradicionales de procesamiento de datos no son suficientes. El término "Big Data" fue popularizado por Doug Laney, analista de Gartner, en la década de 2000.</p>
+            </div>
+            <div id="redes-neuronales">
+                <h2>Redes Neuronales</h2>
+                <p>Las redes neuronales son modelos computacionales inspirados en el funcionamiento del cerebro humano, utilizados para el aprendizaje automático. El concepto de redes neuronales se remonta a Warren McCulloch y Walter Pitts en 1943, quienes propusieron un modelo de neurona artificial.</p>
+            </div>
+            <div id="logica-binaria">
+                <h2>Lógica Binaria</h2>
+                <p>La lógica binaria es un sistema de lógica y matemáticas que utiliza dos valores, generalmente representados como 0 y 1. George Boole fue el primero en formalizar la lógica binaria en su libro "The Laws of Thought" (1854).</p>
+            </div>
+            <div id="gramaticas">
+                <h2>Gramáticas de Lenguajes Formales</h2>
+                <p>Las gramáticas de lenguajes formales son un conjunto de reglas que describen la estructura sintáctica de un lenguaje. Noam Chomsky es conocido por su trabajo en la teoría de la gramática formal, que incluye las gramáticas de lenguajes formales.</p>
+            </div>
+            <div id="teorema-bayes">
+                <h2>Teorema de Bayes</h2>
+                <p>El teorema de Bayes describe la probabilidad condicional de un evento, dado el conocimiento previo de otro evento relacionado. Thomas Bayes fue un estadístico británico del siglo XVIII conocido por su trabajo en teoría de la probabilidad, que incluye el teorema de Bayes.</p>
+            </div>
+            <div id="cloud-computing">
+                <h2>Computación en la Nube</h2>
+                <p>La computación en la nube es un modelo de prestación de servicios de tecnología de la información a través de internet. El término "cloud computing" fue popularizado por Eric Schmidt, CEO de Google, en 2006.</p>
+            </div>
+            <div id="cibercultura">
+                <h2>Cibercultura</h2>
+                <p>La cibercultura es una cultura emergente que se desarrolla a través del uso de tecnologías de la información y la comunicación. Pierre Lévy es conocido por su trabajo en cibercultura, explorando la relación entre la tecnología y la cultura.</p>
+            </div>
+            <div id="estadistica">
+                <h2>Estadística</h2>
+                <p>La estadística es la disciplina que se ocupa de recopilar, organizar, analizar e interpretar datos para tomar decisiones. El término "estadística" se originó en el siglo XVIII y su aplicación moderna fue influida por Francis Galton, Karl Pearson y Ronald Fisher, entre otros.</p>
+            </div>
+            <div id="paradigmas-programacion">
+                <h2>Paradigmas de Programación</h2>
+                <p>Los paradigmas de programación son estilos o enfoques de programación que guían la organización y estructura de programas de computadora. El concepto de paradigmas de programación fue desarrollado por Peter Landin en su artículo de 1966, "The Next 700 Programming Languages".</p>
+            </div>
+            <div id="data-analytics">
+                <h2>Data Analytics</h2>
+                <p>El data analytics es el proceso de examinar grandes conjuntos de datos para descubrir patrones, tendencias y relaciones. El término ha sido popularizado por expertos en el campo de la informática y la estadística, como John W. Tukey y Edward Tufte.</p>
+            </div>
+            <div id="biotecnologia">
+                <h2>Biotecnología</h2>
+                <p>La biotecnología es la aplicación de organismos vivos, sistemas biológicos o sus derivados para desarrollar o modificar productos. El término se ha utilizado ampliamente desde la década de 1970 y su desarrollo ha sido influenciado por científicos como Paul Berg y Herbert Boyer.</p>
+            </div>
+            <div id="ia">
+                <h2>Inteligencia Artificial</h2>
+                <p>La inteligencia artificial es un campo de la informática que se enfoca en crear sistemas que pueden realizar tareas que requieren inteligencia humana. El término "Inteligencia Artificial" fue acuñado por John McCarthy en 1956 durante la Conferencia de Dartmouth.</p>
+            </div>
+            <div id="sistemas-operativos">
+                <h2>Sistemas Operativos</h2>
+                <p>Los sistemas operativos son software que administra los recursos de hardware y proporciona servicios a los programas de aplicación. El concepto de sistemas operativos se remonta a los años 1950 y 1960, con figuras como John McCarthy y John Backus contribuyendo al desarrollo temprano.</p>
+            </div>
+            <div id="algebra">
+                <h2>Álgebra</h2>
+                <p>El álgebra es una rama de la matemática que estudia la estructura, las relaciones y las cantidades. El término "álgebra" proviene del libro "Al-Kitab al-Mukhtasar fi Hisab al-Jabr wal-Muqabala" escrito por el matemático persa Muhammad ibn Musa al-Khwarizmi.</p>
+            </div>
+            <div id="inferencia-estadistica">
+                <h2>Inferencia Estadística</h2>
+                <p>La inferencia estadística es el proceso de sacar conclusiones sobre una población basándose en una muestra de datos de esa población. Ronald Fisher es conocido por su trabajo en inferencia estadística, que incluye el desarrollo de varios métodos y técnicas.</p>
+            </div>
+            <div id="arquitectura-computadores">
+                <h2>Arquitectura de Computadores</h2>
+                <p>La arquitectura de computadores es la estructura y diseño de sistemas de computadoras, incluidos procesadores, memoria y dispositivos de entrada/salida. Maurice Wilkes es conocido por su trabajo en la arquitectura de computadores, siendo una de las figuras clave en el desarrollo de la EDSAC en la década de 1940.</p>
+            </div>
+            <div id="procesos-gerenciales">
+                <h2>Procesos Gerenciales</h2>
+                <p>Los procesos gerenciales son un conjunto de actividades que planifican, organizan, dirigen y controlan los recursos de una organización para lograr objetivos. El estudio de los procesos gerenciales ha sido influenciado por expertos en administración y gestión, como Peter Drucker y Frederick Taylor.</p>
+            </div>
+            <div id="desarrollo-software">
+                <h2>Desarrollo de Software</h2>
+                <p>El desarrollo de software es el proceso de crear, diseñar, programar y mantener software. El desarrollo de software ha sido influenciado por figuras como Edsger Dijkstra, quien introdujo el concepto de programación estructurada en la década de 1960.</p>
+            </div>
+            <div id="logica-computadoras">
+                <h2>Lógica de las Computadoras</h2>
+                <p>La lógica de las computadoras son los principios y reglas que gobiernan el diseño y funcionamiento de sistemas de computadoras. George Boole es conocido por su trabajo en la lógica matemática, que sentó las bases para el desarrollo de la lógica de las computadoras.</p>
+            </div>
+            <div id="ingenieria-software">
+                <h2>Ingeniería de Software</h2>
+                <p>La ingeniería del software es una disciplina que se encarga de aplicar principios de la ingeniería al desarrollo, mantenimiento y gestión de software de manera sistemática. Barry Boehm es un destacado investigador y profesor en este campo, conocido por su trabajo en modelos de costos de desarrollo de software y gestión de proyectos.</p>
+            </div>
+            <div id="distribucion-muestral">
+                <h2>Distribución Muestral</h2>
+                <p>Una distribución muestral es la distribución de un estadístico basado en las muestras de una población, que describe la variabilidad de ese estadístico y permite realizar inferencias sobre los parámetros de la población. Jerzy Neyman, un estadístico polaco del siglo XX, es conocido por su trabajo en la teoría de muestreo, incluyendo la formulación del concepto de distribución muestral.</p>
+            </div>
+            <div id="redes-sociales">
+                <h2>Redes Sociales</h2>
+                <p>Las redes sociales son plataformas en línea que permiten a los usuarios crear perfiles, compartir contenido, conectarse con otros usuarios y participar en comunidades virtuales. Su aparición se da en GeoCities, donde los usuarios podían alojar sus webs en los “barrios” seleccionados en 1994.</p>
+            </div>
+            <div id="maquina-estado-finito">
+                <h2>Máquina de Estado Finito</h2>
+                <p>Una máquina de estado finito es un modelo matemático de un sistema que puede estar en uno de un número finito de estados, y que cambia de estado en respuesta a ciertos estímulos externos denominados entradas. Edward F. Moore y Claude Shannon son pioneros en el desarrollo de las máquinas de estado finito, habiendo contribuido a su formalización en la década de 1950.</p>
+            </div>
+            <div id="algebra-booleana">
+                <h2>Álgebra Booleana</h2>
+                <p>El álgebra booleana es un sistema matemático que modela la lógica y las operaciones en circuitos electrónicos y sistemas de computación. Fue desarrollada por George Boole en el siglo XIX y es fundamental en el diseño de circuitos digitales y en la teoría de la computación.</p>
+            </div>            </div>
+            <div id="sgbd">
+                <h2>Sistema de Gestión de Bases de Datos</h2>
+                <p>Un Sistema de Gestión de Bases de Datos (SGBD) es un software que permite a los usuarios crear, mantener y utilizar bases de datos. Su función es gestionar el almacenamiento, la organización y la recuperación de los datos de manera eficiente y segura. Ejemplos de SGBD son MySQL, Oracle, SQL Server, PostgreSQL, entre otros.</p>
+            </div>
+        </div>
+       </div>
+        
+
+    <!--Footer-->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>TecnoSistemas</h5>
+                    <p>© 2024 TecnoSistemas. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="politicas.html">Politica De Seguridad</a></li>
+                        <li><a href="quienessomos.html">Quienes Somos</a></li>
+                        <li><a href="contactenos.html">Contacto</a></li>
+                    </ul>
+                </div>  
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <div class="social-icons">
+                        <a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a>
+                        <a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a>
+                        <a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--BootstrapJS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--JS externo-->
+    <script src="js externo/script.js"></script>
+</body>
+</html>

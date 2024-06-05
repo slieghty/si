@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--BootstrapCSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>TecnoSistemas</title>
+    <!--Estilos personalizados-->
+    <link rel="stylesheet" href="css externo/style.css">
+    <style>
+        .carousel-item {
+            height: 500px;
+            object-fit: cover;
+        }
+        .container2{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!--Head-->
+    <nav id="navbar" class="navbar navbar-dark navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="index.html">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="30" stroke="black" stroke-width="2" fill="#ffc107" />
+                    <path d="M20 32 L44 32 M32 20 L32 44" stroke="black" stroke-width="2" />
+                    <circle cx="32" cy="32" r="4" fill="black" />
+                </svg>
+                <span class="logo-text">TecnoSistemas</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title logo-text" id="offcanvasDarkNavbarLabel">TecnoSistemas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Te Puede Interesar
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="estadodelarte.html">Estado Del Arte</a></li>
+                          <li><a class="dropdown-item" href="marcoteorico.html">Marco Teorico</a></li>
+                          <li><a class="dropdown-item" href="marcoconceptual.html">Marco Conceptual</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="marcogeografico.html">Marco Geografico</a></li>
+                          <li><a class="dropdown-item" href="metodologico.html">Marco Metodologico</a></li>
+                        </ul>
+                      </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            NOSOTROS
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="quienessomos.html">Quienes somos</a></li>
+                            <li><a class="dropdown-item" href="contactenos.html"> Contactenos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="politicas.html"> Politica De Privacidad </a></li>
+                            <li><a class="dropdown-item" href="webgrafia.html"> Webgrafia   </a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            QUE NECESITAS
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-header"> <h6>Vision</h6> </li>                              
+                            <li><a class="dropdown-item" href="alcance.html">Alcance</a></li>                          
+                            <li class="dropdown-header"> <h6>Que Nos Detiene</h6> </li>  
+                            <li><a class="dropdown-item" href="porblemas.html">Problemas</a></li>
+                            <li><a class="dropdown-item" href="pro.html">justificacion</a></li>                          
+                            <li class="dropdown-header" id="uni"> <h6>Universidades</h6> </li>    
+                            <li><a class="dropdown-item" href="icesi.html">Icesi</a></li>
+                            <li><a class="dropdown-item" href="jeverian.html">Javeriana</a></li>                          
+                            <li><a class="dropdown-item" href="univalle.html">  Universidad del valle </a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              QUE DESEAMOS
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="desafios.html"> Introduccion</a></li>
+                              <li><a class="dropdown-item" href="plantiamiento.html"> Planteamiento</a></li>
+                              <li><a class="dropdown-item" href="conclusiones.html"> Conclusiones</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="encuesta.html">Encuesta</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li class="dropdown-header"> <h6>Objetivos</h6> </li>
+                              <li><a class="dropdown-item" href="especifico.html"> Especifico</a></li>
+                              <li><a class="dropdown-item" href="generales.html"> Generales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--semestre 1-->
+    <div class="container-fluid text-center primer-container rounded d-flex flex-column justify-content-center align-items-center container2">
+        <h1 class="display-2 fw-bold text-light mx-auto">Marco Metodológico</h1>
+      </div>
+
+      <!--card-->
+      <div class="container mt-5 mb-5">
+        <div class="card card-custom">
+            <img src="img/algbra.jpg" class="card-img-top" alt="img ">
+            <div class="card-body">
+                <h5 class="card-title">Primer Orientador</h5>
+                <p class="card-text">Barry Boehm es reconocido por su contribución a modelos de desarrollo</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Ver más
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Primer Orientador</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/algebrafunciones.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                    <p>En el ámbito de la metodología de desarrollo de software, Barry Boehm es reconocido por su contribución a modelos de desarrollo como el Modelo en Espiral, que enfatiza la planificación, la evaluación de riesgos y la adaptación continua en el proceso de desarrollo de sistemas.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--semestre 2-->
+        <div class="container-fluid text-center primer-container rounded d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-2 fw-bold text-light mx-auto">Tipos de Metodologías</h1>
+          </div>
+    
+          <!--card1-->
+          <div class="container mt-5 mb-5">
+            <div class="card card-custom">
+                <img src="img/algoritmos.jpg" class="card-img-top" alt="img ">
+                <div class="card-body">
+                    <h5 class="card-title">Responsive Web Design (RWD)</h5>
+                    <p class="card-text">Esta metodología se centra en crear páginas web que se adapten y se vean bien en diferentes dispositivos</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Responsive Web Design (RWD) </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/algoritmosyprogramacion.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                        <p>Esta metodología se centra en crear páginas web que se adapten y se vean bien en diferentes dispositivos y tamaños de pantalla, como computadoras de escritorio, tabletas y teléfonos móviles. Se utilizan técnicas como el diseño fluido y los media queries para lograr este objetivo.</p>                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--card2-->
+        <div class="container mt-5 mb-5">
+            <div class="card card-custom">
+                <img src="img/aplicadas.jpg " class="card-img-top" alt="img ">
+                <div class="card-body">
+                    <h5 class="card-title">Mobile-First Design</h5>
+                    <p class="card-text">Esta metodología implica diseñar primero la versión móvil de una página web y luego adaptarla</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Más sobre Mobile-First Design </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/matematicasaplicadas.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                        <p>Esta metodología implica diseñar primero la versión móvil de una página web y luego adaptarla para dispositivos más grandes, como computadoras de escritorio. Esto garantiza que la experiencia del usuario en dispositivos móviles sea óptima, ya que cada vez más personas acceden a Internet a través de sus teléfonos.</p>                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--card3-->
+        <div class="container mt-5 mb-5">
+            <div class="card card-custom">
+                <img src="img/software.jpg" class="card-img-top" alt="img ">
+                <div class="card-body">
+                    <h5 class="card-title">Agile Development</h5>
+                    <p class="card-text">El desarrollo ágil es un enfoque iterativo e incremental para el desarrollo de software</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Más sobre Agile Development</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/ingenieriasoftware.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                        <p>El desarrollo ágil es un enfoque iterativo e incremental para el desarrollo de software, que se puede aplicar también al desarrollo de páginas web. Se divide el proyecto en ciclos de desarrollo cortos llamados "sprints", durante los cuales se entregan incrementos funcionales del producto.</p>                                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+  <!--card1-->
+  <div class="container mt-5 mb-5">
+    <div class="card card-custom">
+        <img src="img/probabilidad.jpg" class="card-img-top" alt="img ">
+        <div class="card-body">
+            <h5 class="card-title">Lean UX </h5>
+            <p class="card-text">Esta metodología se centra en crear productos digitales de manera rápida y eficiente</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
+                Ver más
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Más sobre  Lean UX </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/teoriaprobabilidades.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                <p>La teoría de la probabilidad es una de las ramas de la matemática con varias aplicaciones en nuestra actualidad. Por medio de ésta se abordan el cálculo de las primas de los seguros, los riesgos nucleares, los pronósticos económicos, políticos y del tiempo. Teoría de la probabilidad, contiene definiciones y terminología de frecuente uso en esta parte de las matemáticas; también se exponen distintos métodos de solución y las reglas esenciales del análisis combinatorio que proporcionan, en muchas ocasiones, una vía más cómoda en la solución de problemas; además se enuncia el Teorema de Bayes y su adjunto, de la probabilidad total. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--card2-->
+  <div class="container mt-5 mb-5">
+    <div class="card card-custom">
+        <img src="img/pc.jpg" class="card-img-top" alt="img ">
+        <div class="card-body">
+            <h5 class="card-title">Scrum</h5>
+            <p class="card-text">Similar al desarrollo ágil, Scrum es un marco de trabajo que se utiliza para gestionar proyectos</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal1">
+                Ver más
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Más sobre  Scrum </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/estructurasdiscretas.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                <p>Se describen elementos de las matemáticas discretas asociados con la lógica de las computadoras, como los sistemas de numeración, la lógica binaria y los grafos dirigidos. Además, se explican estructuras discretas de la teoría informática, como las álgebras de Boole, las máquinas de estado finito y las gramáticas de los lenguajes formales. Está orientada a la solución de problemas aplicando análisis de complejidad computacional, conceptos fundamentales de matemáticas discretas y estructuras de datos (pilas, colas, grafos, árboles, tablas hash). Generar en el estudiante la habilidad de analizar, diseñar e implementar estructuras de datos en memoria principal necesarias para resolver problemas concretos, teniendo en cuenta un conjunto de restricciones y criterios de calidad. Fomenta la capacidad de explicar las bases teóricas matemáticas de cada una de las estructuras de datos trabajadas. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <!--card1-->
+  <div class="container mt-5 mb-5">
+    <div class="card card-custom">
+        <img src="img/datos.jpg" class="card-img-top" alt="img ">
+        <div class="card-body">
+            <h5 class="card-title">SISTEMAS RMM (Relationship Management Methodology)</h5>
+            <p class="card-text">La materia abarca desde el modelamiento conceptual hasta la implementación en un manejador de bases de datos relacionales, incluyendo el diseño lógico basado en principios formales.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2">
+                Ver más
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Más sobre RMM (Relationship Management Methodology) </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/sistemasdedatos.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                <p>La metodología RMM (Relationship Management Methodology) se enfoca en el análisis, diseño y desarrollo de aplicaciones hipermedia desde una perspectiva centrada en la información, permitiendo estructurar páginas web complejas y definir relaciones entre objetos del dominio.</p>            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--card2-->
+  <div class="container mt-5 mb-5">
+    <div class="card card-custom">
+        <img src="img/inferencia.jpg" class="card-img-top" alt="img ">
+        <div class="card-body">
+            <h5 class="card-title">OOHDM (Object Oriented Hypermedia Design Method)</h5>
+            <p class="card-text">utiliza los principios de la Programación Orientada a Objetos</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal3">
+                Ver más
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Más sobre OOHDM (Object Oriented Hypermedia Design Method)  </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/inferenciaestadistica.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                <p>Una de las situaciones más comunes cuando se hace un análisis de tipo estadístico es realizar inferencias acerca de la media µ de una población. Es por esto que se debe investigar sobre la distribución muestral de este estadístico, incluyendo la forma o tipo de su distribución de probabilidad y algunas de sus características, como son la media y la varianza. Otras veces se puede estar interesado en investigar distintas características de una población que no sean necesariamente la media de la misma. En estos casos, la distribución muestral de proporciones es la más adecuada para dar respuesta a este par de situaciones. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--semestre 7-->
+    <div class="container-fluid text-center primer-container rounded d-flex flex-column justify-content-center align-items-center">
+        <h1 class="display-2 fw-bold text-light mx-auto">Las Metodologías Más Adecuadas</h1>
+      </div>
+    
+
+<!--card1-->
+<div class="container mt-5 mb-5">
+    <div class="card card-custom">
+        <img src="img/partees.jpg" class="card-img-top" alt="img ">
+        <div class="card-body">
+            <h5 class="card-title">Agile Development</h5>
+            <p class="card-text"><p>Ya que es conocido por su capacidad para adaptarse a los cambios. Dado que la página web necesitará actualizaciones frecuentes </p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal4">
+                Ver más
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Más sobre Agile Development</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/arquitecturacomputadores.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                <p>Ya que es conocido por su capacidad para adaptarse a los cambios. Dado que la página web necesitará actualizaciones frecuentes y podría evolucionar con el tiempo para reflejar los avances en la ingeniería de sistemas, un enfoque ágil permitirá incorporar cambios de manera eficiente y oportuna. Además, Agile se basa en ciclos de desarrollo cortos llamados "sprints", durante los cuales se entregan incrementos funcionales del producto. Esto permitiría lanzar rápidamente nuevas características y contenidos en la página web, lo que sería beneficioso para mantenerla actualizada y relevante para los estudiantes. </p>
+                <p>Dado que los requisitos de la página web pueden evolucionar a medida que cambian las necesidades de los estudiantes o surgen nuevos avances en el campo de la ingeniería de sistemas, un enfoque ágil permitiría ajustar los objetivos y prioridades del proyecto de manera flexible. Agile promueve la entrega continua de software de alta calidad mediante la incorporación de prácticas como pruebas automatizadas y revisión continua del código. Esto garantizaría que la página web educativa sea confiable y fácil de usar para los estudiantes de bachillerato de los grados decimo y once del Colegio León de Greiff. Agile Development se destaca como la metodología más adecuada debido a su capacidad para adaptarse a los cambios, su enfoque en la entrega incremental y su enfoque en la calidad del producto final. Estas características serían fundamentales para el desarrollo exitoso de <a href="http://www.pinooscar&muñozlaura_ingenieriadeenieriadesistemas_11-3.com">www.pinooscar&muñozlaura_ingenieriadeenieriadesistemas_11-3.com</a>.</p>            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--table-->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Tipo de Página Web</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sección</th>
+                                <th>Contenido</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h3>Página web dinámica</h3></td>
+                                <td>
+                                    <p>Las páginas web dinámicas muestran contenido que puede cambiar según la interacción del usuario o la información almacenada en una base de datos. Estas páginas suelen estar construidas con lenguajes de programación del lado del servidor, como PHP, Python o Ruby on Rails, y pueden incluir características como formularios interactivos, inicio de sesión de usuario y actualización en tiempo real.</p>
+                                    <p>Una página web dinámica permite actualizar el contenido de manera rápida y sencilla. Dado que la información en una carrera como la ingeniería de sistemas está en constante evolución con los avances tecnológicos y cambios en el campo, es crucial poder actualizar rápidamente el contenido del sitio para mantenerlo relevante y preciso; nos permite agregar, editar y eliminar contenido de manera eficiente sin necesidad de conocimientos técnicos avanzados. Esto facilita la tarea de mantener el sitio actualizado y en funcionamiento sin problemas. </p>
+                                    <p>Incluye interactivas que mejoran la experiencia del usuario, como formularios de contacto, evaluaciones en línea, foros de discusión y sistemas de comentarios. Estas características pueden fomentar la participación de los estudiantes y promover el aprendizaje colaborativo, además, puede adaptarse para ofrecer contenido personalizado según las preferencias y necesidades individuales de los estudiantes del Colegio León de Greiff de los grados decimo y once.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <h2>Muestra</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sitio</th>
+                                <th>Lugar</th>
+                                <th>Muestra</th>
+                                <th>Tamaño</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Colegio León de Greiff</td>
+                                <td>Barrio Villacolombia comuna 8 Calle 50 #12ª - 24</td>
+                                <td>estudiantes de grado 11</td>
+                                <td>100 estudiantes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <h2>Instrumento</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sección</th>
+                                <th>Contenido</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h3>Encuesta</h3></td>
+                                <td>
+                                    <p>Una encuesta es un instrumento de recolección de información que consiste en una serie de preguntas estructuradas diseñadas para recopilar datos sobre opiniones, actitudes o características de una población específica. Se utiliza para obtener información cuantitativa o cualitativa sobre un tema en particular, y puede ser administrada de manera presencial, telefónica, en línea o a través de otros medios.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <h2>Instrumento Más Adecuado</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Contenido</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Se implementará como instrumento de recolección la encuesta ya que es versátil, por este medio se podrá llegar a una cuantificación de las personas y sus necesidades para tener definido el público al que se dirigirá la página para lograr resultados exitosos con la misma. Por medio de los resultados que arroje la encuesta se tendrá en cuenta para la constante actualización de la página y sus usuarios personalizados.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    
+
+
+    <!--Footer-->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>TecnoSistemas</h5>
+                    <p>© 2024 TecnoSistemas. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="politicas.html">Politica De Seguridad</a></li>
+                        <li><a href="quienessomos.html">Quienes Somos</a></li>
+                        <li><a href="contactenos.html">Contacto</a></li>
+                    </ul>
+                </div>  
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <div class="social-icons">
+                        <a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a>
+                        <a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a>
+                        <a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--BootstrapJS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--JS externo-->
+    <script src="js externo/script.js"></script>
+</body>
+</html>

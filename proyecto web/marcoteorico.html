@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--BootstrapCSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>TecnoSistemas</title>
+    <!--Estilos personalizados-->
+    <link rel="stylesheet" href="css externo/style.css">
+    <style>
+   .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .titulo-container{
+        background-image: url(img/marcoteorico.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 20rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+      .primer-container{
+        background-image: url(img/semestre1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 20rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+
+      .card-custom {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-custom img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 25rem;
+            object-fit: cover;
+        }
+        .card-custom .card-body {
+            background: #759E9A;
+            padding: 20px;
+            max-height: 30rem;
+        }
+        .card-custom .card-title {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+        }
+        .modal-content {
+            border-radius: 15px;
+            color: black;
+            background-color: #759E9A;
+        }
+        .btn-primary , .btn-secondary {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+        .btn-primary:hover {
+            background-color: #e0a800;
+            border-color: #d39e00;
+        }
+        .btn-secondary:hover {
+            background-color: #e0a800;
+            border-color: #d39e00; 
+        }
+        .modal-body img{
+            max-height: 15rem;
+        }
+        .modal-body{
+            background-color: #759E9A;
+        }
+    </style>
+</head>
+<body>
+      <!--Head-->
+      <nav id="navbar" class="navbar navbar-dark navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="index.html">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="30" stroke="black" stroke-width="2" fill="#ffc107" />
+                    <path d="M20 32 L44 32 M32 20 L32 44" stroke="black" stroke-width="2" />
+                    <circle cx="32" cy="32" r="4" fill="black" />
+                </svg>
+                <span class="logo-text">TecnoSistemas</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title logo-text" id="offcanvasDarkNavbarLabel">TecnoSistemas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Te Puede Interesar
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="estadodelarte.html">Estado Del Arte</a></li>
+                          <li><a class="dropdown-item" href="marcoteorico.html">Marco Teorico</a></li>
+                          <li><a class="dropdown-item" href="marcoconceptual.html">Marco Conceptual</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="marcogeografico.html">Marco Geografico</a></li>
+                          <li><a class="dropdown-item" href="metodologico.html">Marco Metodologico</a></li>
+                        </ul>
+                      </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            NOSOTROS
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="quienessomos.html">Quienes somos</a></li>
+                            <li><a class="dropdown-item" href="contactenos.html"> Contactenos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="politicas.html"> Politica De Privacidad </a></li>
+                            <li><a class="dropdown-item" href="webgrafia.html"> Webgrafia   </a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            QUE NECESITAS
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-header"> <h6>Vision</h6> </li>                              
+                            <li><a class="dropdown-item" href="alcance.html">Alcance</a></li>                          
+                            <li class="dropdown-header"> <h6>Que Nos Detiene</h6> </li>  
+                            <li><a class="dropdown-item" href="porblemas.html">Problemas</a></li>
+                            <li><a class="dropdown-item" href="pro.html">justificacion</a></li>                          
+                            <li class="dropdown-header" id="uni"> <h6>Universidades</h6> </li>    
+                            <li><a class="dropdown-item" href="icesi.html">Icesi</a></li>
+                            <li><a class="dropdown-item" href="jeverian.html">Javeriana</a></li>                          
+                            <li><a class="dropdown-item" href="univalle.html">  Universidad del valle </a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              QUE DESEAMOS
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="desafios.html"> Introduccion</a></li>
+                              <li><a class="dropdown-item" href="plantiamiento.html"> Planteamiento</a></li>
+                              <li><a class="dropdown-item" href="conclusiones.html"> Conclusiones</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="encuesta.html">Encuesta</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li class="dropdown-header"> <h6>Objetivos</h6> </li>
+                              <li><a class="dropdown-item" href="especifico.html"> Especifico</a></li>
+                              <li><a class="dropdown-item" href="generales.html"> Generales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--header-->
+    <div class="container-fluid text-center titulo-container rounded d-flex flex-column justify-content-center align-items-center">
+        <h1 class="display-2 fw-bold text-light mx-auto">Qué Aprenderemos</h1>
+      </div>
+
+      
+    <!--Content-->
+
+
+    <div class="container-lg mt-5 mb-5">
+        <h1>¿Qué es?</h1>
+        <p>Barry Boehm es un reconocido experto en ingeniería de software y gestión de proyectos. Ha realizado contribuciones significativas en áreas como el desarrollo de software, la gestión de riesgos y la ingeniería de sistemas. Es conocido especialmente por su trabajo en el modelo COCOMO (Constructive Cost Model), que es un modelo ampliamente utilizado para estimar el costo, esfuerzo y tiempo requeridos en el desarrollo de software. Además de su trabajo académico, Boehm ha sido un influyente consultor en la industria, asesorando a empresas y organizaciones gubernamentales en proyectos de gran escala. Su enfoque en la gestión de riesgos y la adaptabilidad en el desarrollo de software ha ayudado a mejorar la calidad y eficiencia en numerosos proyectos. Boehm ha escrito varios libros y artículos académicos que son referencias fundamentales en el campo de la ingeniería de software y la gestión de proyectos. Su experiencia y conocimiento han sido reconocidos con premios y distinciones a lo largo de su carrera.</p>
+    </div>
+
+    <!--semestre 1-->
+    <div class="container-fluid text-center primer-container rounded d-flex flex-column justify-content-center align-items-center">
+        <h1 class="display-2 fw-bold text-light mx-auto">Semestre 1</h1>
+      </div>
+
+      <!--card-->
+      <div class="container mt-5 mb-5">
+        <div class="card card-custom">
+            <img src="img/algbra.jpg" class="card-img-top" alt="img ">
+            <div class="card-body">
+                <h5 class="card-title">Algebra Y FUNCIONES</h5>
+                <p class="card-text">El estudio del álgebra es crucial para futuros docentes, desarrollando su pensamiento lógico-abstracto y habilidades para resolver problemas y modelar fenómenos.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Ver más
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Más sobre Algebra y Funciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/algebrafunciones.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                    <p>El estudio del álgebra es relevante en la formación inicial de los futuros docentes, ya que se utiliza como una herramienta para plantear y resolver problemas intramatemáticos y extramatemáticos, además de interpretar y modelar distintos fenómenos e inclusive la toma de decisiones en ciertos casos. Aprender sobre esta área de las matemáticas favorece el desarrollo del pensamiento lógico-abstracto, ya que se trata de un conjunto estructurado de parámetros, variables, incógnitas, ecuaciones, inecuaciones y funciones con sus propiedades y representaciones.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--semestre 2-->
+        <div class="container-fluid text-center primer-container rounded d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-2 fw-bold text-light mx-auto">Semestre 2</h1>
+          </div>
+    
+          <!--card1-->
+          <div class="container mt-5 mb-5">
+            <div class="card card-custom">
+                <img src="img/algoritmos.jpg" class="card-img-top" alt="img ">
+                <div class="card-body">
+                    <h5 class="card-title"> ALGORITMOS Y PROGRAMACION</h5>
+                    <p class="card-text">El estudio del álgebra es crucial para futuros docentes, desarrollando su pensamiento lógico-abstracto y habilidades para resolver problemas y modelar fenómenos.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Más sobre Algoritmos y Programacion </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/algoritmosyprogramacion.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                        <p>Algoritmos y Programación en Pseudocódigo es una propuesta, por parte del equipo de profesores del área de Desarrollo de Software del Departamento de las Tecnologías de las Información y las Comunicaciones –TIC-, como un material de apoyo a las clases, y como acompañamiento al trabajo independiente de sus estudiantes, propiciando actividades de autoformación.  Está dirigido a estudiantes en los cursos de inicio de carrera y se ha diseñado bajo la metodología basada en problemas y en casos de estudio, lo que permite al estudiante enfrentarse a situaciones reales, que conducen a alcanzar la competencia relacionada con el análisis de las situaciones problemáticas y la proposición de soluciones mediante el uso del computador, logrando de esta forma un alto grado de motivación en el aprendizaje. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--card2-->
+        <div class="container mt-5 mb-5">
+            <div class="card card-custom">
+                <img src="img/aplicadas.jpg " class="card-img-top" alt="img ">
+                <div class="card-body">
+                    <h5 class="card-title">MATEMATICAS APLICADAS</h5>
+                    <p class="card-text">El estudio del álgebra es crucial para futuros docentes, desarrollando su pensamiento lógico-abstracto y habilidades para resolver problemas y modelar fenómenos.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Más sobre Matematicas Aplicadas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/matematicasaplicadas.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                        <p>Las Matemáticas Aplicadas son un laboratorio dinámico donde se da solución a los problemas que se presentan en la vida, la ciencia, la sociedad y todo lo que puedas imaginar, a través de la modelización y la simulación. De este laboratorio surgen no solamente soluciones a los problemas particulares de organizaciones e industrias, sino también teorías generales que ayudan al avance científico y tecnológico de nuestro entorno con aportes como la transmisión a través de las sondas espaciales, la predicción de la expansión de un virus o el comportamiento de redes sociales. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--card3-->
+        <div class="container mt-5 mb-5">
+            <div class="card card-custom">
+                <img src="img/software.jpg" class="card-img-top" alt="img ">
+                <div class="card-body">
+                    <h5 class="card-title">Ingeniería del Software </h5>
+                    <p class="card-text">El estudio del álgebra es crucial para futuros docentes, desarrollando su pensamiento lógico-abstracto y habilidades para resolver problemas y modelar fenómenos.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Más sobre Ingeniería del Software</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/ingenieriasoftware.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                        <p>La ingeniería del software es una disciplina de la ciencia de la información que utiliza variadas metodologías de diseño cuyas características se adaptan a las necesidades del usuario/cliente. Cada sistema de información es un diseño complejo cuya funcionalidad responde a una operatividad determinada. Dentro de las metodologías ágiles se encuentra Scrum, que se identifica por la comunicación permanente con el cliente, el desarrollo por etapas, la adaptabilidad del proceso, el producto resultante y la arquitectura eficaz por encima del registro riguroso del proceso.</p>
+                                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+<!--semestre 3-->
+<div class="container-fluid text-center primer-container rounded d-flex flex-column justify-content-center align-items-center">
+    <h1 class="display-2 fw-bold text-light mx-auto">Semestre 3</h1>
+  </div>
+
+  <!--card1-->
+  <div class="container mt-5 mb-5">
+    <div class="card card-custom">
+        <img src="img/probabilidad.jpg" class="card-img-top" alt="img ">
+        <div class="card-body">
+            <h5 class="card-title">Teoría de la Probabilidad </h5>
+            <p class="card-text">La teoría de la probabilidad, fundamental en matemáticas, se aplica en seguros, riesgos nucleares y pronósticos, proporcionando definiciones, métodos de solución, análisis combinatorio y el Teorema de Bayes.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
+                Ver más
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Más sobre  Teoría de la Probabilidad </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/teoriaprobabilidades.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                <p>La teoría de la probabilidad es una de las ramas de la matemática con varias aplicaciones en nuestra actualidad. Por medio de ésta se abordan el cálculo de las primas de los seguros, los riesgos nucleares, los pronósticos económicos, políticos y del tiempo. Teoría de la probabilidad, contiene definiciones y terminología de frecuente uso en esta parte de las matemáticas; también se exponen distintos métodos de solución y las reglas esenciales del análisis combinatorio que proporcionan, en muchas ocasiones, una vía más cómoda en la solución de problemas; además se enuncia el Teorema de Bayes y su adjunto, de la probabilidad total. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--card2-->
+  <div class="container mt-5 mb-5">
+    <div class="card card-custom">
+        <img src="img/pc.jpg" class="card-img-top" alt="img ">
+        <div class="card-body">
+            <h5 class="card-title">COMPUTACION Y ESTRUCTURAS DISCRETAS</h5>
+            <p class="card-text">La teoría de la probabilidad, fundamental en matemáticas, se aplica en seguros, riesgos nucleares y pronósticos, proporcionando definiciones, métodos de solución, análisis combinatorio y el Teorema de Bayes.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal1">
+                Ver más
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Más sobre  COMPUTACION Y ESTRUCTURAS DISCRETAS </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/estructurasdiscretas.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                <p>Se describen elementos de las matemáticas discretas asociados con la lógica de las computadoras, como los sistemas de numeración, la lógica binaria y los grafos dirigidos. Además, se explican estructuras discretas de la teoría informática, como las álgebras de Boole, las máquinas de estado finito y las gramáticas de los lenguajes formales. Está orientada a la solución de problemas aplicando análisis de complejidad computacional, conceptos fundamentales de matemáticas discretas y estructuras de datos (pilas, colas, grafos, árboles, tablas hash). Generar en el estudiante la habilidad de analizar, diseñar e implementar estructuras de datos en memoria principal necesarias para resolver problemas concretos, teniendo en cuenta un conjunto de restricciones y criterios de calidad. Fomenta la capacidad de explicar las bases teóricas matemáticas de cada una de las estructuras de datos trabajadas. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--semestre 4-->
+<div class="container-fluid text-center primer-container rounded d-flex flex-column justify-content-center align-items-center">
+    <h1 class="display-2 fw-bold text-light mx-auto">Semestre 4</h1>
+  </div>
+
+  <!--card1-->
+  <div class="container mt-5 mb-5">
+    <div class="card card-custom">
+        <img src="img/datos.jpg" class="card-img-top" alt="img ">
+        <div class="card-body">
+            <h5 class="card-title">SISTEMAS INTENSIVOS EN DATOS</h5>
+            <p class="card-text">La materia abarca desde el modelamiento conceptual hasta la implementación en un manejador de bases de datos relacionales, incluyendo el diseño lógico basado en principios formales.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2">
+                Ver más
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Más sobre SISTEMAS INTENSIVOS EN DATOS </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/sistemasdedatos.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                <P>Es una materia orientada a las bases de datos que comprende desde el modelamiento conceptual y su transformación a un modelo relacional de datos, hasta su implementación en un manejador de bases de datos relacionales, pasando por un diseño lógico fundamentado en las técnicas y principios formales de la disciplina. </P>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--card2-->
+  <div class="container mt-5 mb-5">
+    <div class="card card-custom">
+        <img src="img/inferencia.jpg" class="card-img-top" alt="img ">
+        <div class="card-body">
+            <h5 class="card-title">INFERENCIA ESTADISTICA</h5>
+            <p class="card-text">En el análisis estadístico, es común realizar inferencias sobre la media de una población y estudiar la distribución muestral, su media y varianza, o investigar otras características usando la distribución muestral de proporciones.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal3">
+                Ver más
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Más sobre INFERENCIA ESTADISTICA  </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/inferenciaestadistica.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                <p>Una de las situaciones más comunes cuando se hace un análisis de tipo estadístico es realizar inferencias acerca de la media µ de una población. Es por esto que se debe investigar sobre la distribución muestral de este estadístico, incluyendo la forma o tipo de su distribución de probabilidad y algunas de sus características, como son la media y la varianza. Otras veces se puede estar interesado en investigar distintas características de una población que no sean necesariamente la media de la misma. En estos casos, la distribución muestral de proporciones es la más adecuada para dar respuesta a este par de situaciones. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--semestre 5-->
+<div class="container-fluid text-center primer-container rounded d-flex flex-column justify-content-center align-items-center">
+    <h1 class="display-2 fw-bold text-light mx-auto">Semestre 5</h1>
+  </div>
+
+<!--card1-->
+<div class="container mt-5 mb-5">
+    <div class="card card-custom">
+        <img src="img/partees.jpg" class="card-img-top" alt="img ">
+        <div class="card-body">
+            <h5 class="card-title">ARQUITECTURA DE COMPUTADORES</h5>
+            <p class="card-text">La arquitectura de las computadoras se refiere a técnicas para construir máquinas lógicas programables, distinguiéndose de la organización, donde la arquitectura es la visión funcional y la organización es cómo se implementa con circuitos lógicos.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal4">
+                Ver más
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Más sobre ARQUITECTURA DE COMPUTADORES</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/arquitecturacomputadores.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                <p>El concepto de la arquitectura de las computadoras consiste en un conjunto de
+                    técnicas que permiten construir máquinas lógicas generales programables en forma
+                    práctica. En materia terminológica se distingue la "arquitectura" de un computador de la
+                    "organización" de un computador. Se puede decir que la arquitectura es la visión funcional
+                    (el conjunto de recursos que "ve" el programador), mientras que la organización es la
+                    forma en que se construye una cierta arquitectura en base a circuitos lógicos</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <!--card2-->
+    <div class="container mt-5 mb-5">
+        <div class="card card-custom">
+            <img src="img/computacion.jpg" class="card-img-top" alt="img ">
+            <div class="card-body">
+                <h5 class="card-title">COMPUTACION EN INTERNET</h5>
+                <p class="card-text">La computación en Internet ofrece servicios TIC a través de la web, siendo conveniente y rentable por sus ahorros en licencias y administración, gracias a su arquitectura en capas de software, plataforma e infraestructura.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal5">
+                    Ver más
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Más sobre INFERENCIA ESTADISTICA  </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/computacioninternet.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                    <p>La computación en internet es un modelo de prestación de servicios de tecnología de la información y comunicación en el que los recursos informáticos son ofrecidos y utilizados a través de Internet. La computación en internet es conveniente y rentable tanto para usuarios como para los proveedores. Permite ahorros tanto en licencias como en administración de servicios y de equipos. Esto se debe a la arquitectura conformada por capas con la cual trabaja que corresponden al software, plataforma e infraestructura. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--semestre 7-->
+<div class="container-fluid text-center primer-container rounded d-flex flex-column justify-content-center align-items-center">
+    <h1 class="display-2 fw-bold text-light mx-auto">Semestre 7</h1>
+  </div>
+
+<!--card1-->
+<div class="container mt-5 mb-5">
+    <div class="card card-custom">
+        <img src="img/gerencia.jpg" class="card-img-top" alt="img ">
+        <div class="card-body">
+            <h5 class="card-title">GERENCIA DE PROYECTOS T.I</h5>
+            <p class="card-text">Identificar los procesos gerenciales en la planeación, ejecución y seguimiento de proyectos de investigación y desarrollo tecnológico para categorizar prácticas de gestión de proyectos en grupos de investigación, creando un método de valoración aplicable a la gestión de proyectos de TI en organizaciones científicas y tecnológicas.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal6">
+                Ver más
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Más sobre GERENCIA DE PROYECTOS T.I</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/gerenciaproyectos.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                <p>Identificar los procesos gerenciales que realizan los investigadores para la planeación, ejecución y seguimiento de los proyectos de investigación, desarrollo tecnológico e innovación, con el fin de categorizar por niveles la aplicación de prácticas en gerencia de proyectos por parte de los grupos de investigación. Se enfoca en generar un método de valoración de prácticas gerenciales, aplicable a la gestión de proyectos de TI y dirigido a organizaciones dedicadas al desarrollo de procesos de ciencia y tecnología.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+        <!--card2-->
+        <div class="container mt-5 mb-5">
+            <div class="card card-custom">
+                <img src="img/inteligencia.jpg" class="card-img-top" alt="img ">
+                <div class="card-body">
+                    <h5 class="card-title">INTELIGENCIA ARTIFICIAL</h5>
+                    <p class="card-text">La Inteligencia Artificial es una disciplina que busca desarrollar sistemas inteligentes, inspirados en la inteligencia humana, capaces de mejorar y complementar las capacidades humanas en diversos sectores como salud, logística, educación y finanzas.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal7">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="Modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Más sobre INTELIGENCIA ARTIFICIAL  </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/inteligenciaartificial.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                        <p>Se denomina Inteligencia Artificial a la disciplina cuyo objetivo es el desarrollo de Sistemas Inteligentes, tomando como referencia la Inteligencia Humana.  Dichos sistemas inteligentes tendrán la capacidad de sentir, comprender, actuar y aprender para potenciar y complementar la capacidad humana. Las técnicas de Inteligencia Artificial basadas en un aprendizaje a partir de datos existen desde los años 50 y, en la actualidad, están experimentando un crecimiento exponencial que se fundamenta en los factores como la explosión en la disponibilidad de datos o Big Data, el crecimiento exponencial de la capacidad de computación: almacenamiento y procesamiento de dichos datos a bajo coste, creación de modelos complejos inspirados en las redes neuronales y la democratización de las herramientas existentes para usar las técnicas de la IA. El impacto de la Inteligencia Artificial es trasversal, pudiéndose aplicar en múltiples sectores o ámbitos de conocimiento tales como: salud, logística, educación, producción, finanzas, comercio, ocio, servicios digitales, etc.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--card3-->
+        <div class="container mt-5 mb-5">
+            <div class="card card-custom">
+                <img src="img/sistemas.jpg" class="card-img-top" alt="img ">
+                <div class="card-body">
+                    <h5 class="card-title">SISTEMAS OPERATIVOS</h5>
+                    <p class="card-text">Los sistemas operativos para computadoras son herramientas esenciales que controlan el hardware y facilitan el uso de aplicaciones y dispositivos a través de una interfaz gráfica, siendo fundamentales en la vida contemporánea.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal8">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="Modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Más sobre SISTEMAS OPERATIVOS  </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/sistemasoperativos.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                        <p>Las computadoras, como las conocemos hoy, han transformado la vida del ser humano contemporáneo en todos aspectos. Desde su producción en masa, a un precio mucho más accesible para el usuario promedio y para empresas e instituciones, su uso se ha generalizado de forma tal que la mayoría de las actividades realizadas cotidianamente están ligadas, directa o indirectamente, con un ordenador y son parte esencial en la estructuración de las sociedades modernas. Los sistemas operativos para computadoras son herramientas informáticas que controlan lo que el hardware hace, y facilitan el uso de otras aplicaciones y hardware por medio de una interfaz gráfica; en otras palabras, las ventanas y los iconos que utilizamos para acceder a otros programas y a los dispositivos que conectamos a la máquina: cámaras digitales, impresoras, discos duros, entre muchos otros</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!--semestre 8-->
+<div class="container-fluid text-center primer-container rounded d-flex flex-column justify-content-center align-items-center">
+    <h1 class="display-2 fw-bold text-light mx-auto">Semestre 8</h1>
+  </div>
+
+<!--card1-->
+<div class="container mt-5 mb-5">
+    <div class="card card-custom">
+        <img src="img/seguridad.jpg" class="card-img-top" alt="img ">
+        <div class="card-body">
+            <h5 class="card-title">CIBERSEGURIDAD</h5>
+            <p class="card-text">La ciberseguridad es fundamental para permitir el aprovechamiento del ciberespacio en las interacciones sociales, siendo vital en la era de la tecnología de la información y comunicación (TIC) y la globalización.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal9">
+                Ver más
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="Modal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Más sobre CIBERSEGURIDAD</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/ciberseguridad.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                <p>La ciberseguridad constituye una condición para permitir que los ciudadanos, las organizaciones e instituciones puedan beneficiarse del uso del ciberespacio como dimensión en la cual las relaciones sociales pueden efectuarse en forma más rápida y económica en comparación con otras formas conocidas de intercambio de información. La ciberseguridad emerge ante el creciente uso del ciberespacio como nueva dimensión para la interacción social, resultado de la revolución de la tecnología de la información y comunicación (TIC), que ha acelerado el proceso de globalización y periódicamente sorprende con su constante innovación. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+            <!--Electivas-->
+            <div class="container-fluid text-center primer-container rounded d-flex flex-column justify-content-center align-items-center">
+                <h1 class="display-2 fw-bold text-light mx-auto">Electivas</h1>
+              </div>
+            
+              <div class="container-lg mt-5">
+                <h2 class="mt-5">¿Qué son?</h2>
+                <br>
+                <p>Las materias electivas en Ingeniería de Sistemas son cursos opcionales que permiten a los estudiantes explorar áreas específicas de interés dentro de la disciplina, como inteligencia artificial, ciberseguridad o análisis de datos. Estas asignaturas no solo enriquecen su formación, sino que también les proporcionan habilidades especializadas relevantes para su carrera profesional, preparándolos para adaptarse a un entorno laboral en constante cambio. En resumen, las materias electivas desempeñan un papel crucial al permitir a los estudiantes personalizar su educación y desarrollar habilidades especializadas en áreas que les apasionan.</p>  
+              </div>
+
+            <!--card1-->
+            <div class="container mt-5 mb-5">
+                <div class="card card-custom">
+                    <img src="img/dato.jpg" class="card-img-top" alt="img ">
+                    <div class="card-body">
+                        <h5 class="card-title">	ANALITICA DE DATOS</h5>
+                        <p class="card-text">El análisis de datos es crucial para la toma de decisiones empresariales al examinar, modelar y descubrir patrones en los datos, facilitando la mejora de procesos y la obtención de información valiosa.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#electivas">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="electivas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Más sobre ANALITICA DE DATOS</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/analiticadatos.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                            <p>El análisis de datos es una disciplina que se ocupa de examinar, limpiar, transformar y modelar datos con el fin de descubrir patrones, tendencias y relaciones entre variables. Es una herramienta clave para la toma de decisiones y la mejora de los procesos empresariales. En este artículo, presentamos algunos de los conceptos básicos de data analytics. Es un proceso sistemático que permite obtener información valiosa de los datos para ayudar a las organizaciones a tomar decisiones mejor informadas. Incluye la recopilación, integración, limpieza, transformación y modelado de los datos. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            
+                          <!--card2-->
+            <div class="container mt-5 mb-5">
+                <div class="card card-custom">
+                    <img src="img/movil.jpg" class="card-img-top" alt="img ">
+                    <div class="card-body">
+                        <h5 class="card-title">APLICACIONES MOVILES</h5>
+                        <p class="card-text">En los últimos años, el uso de dispositivos móviles y aplicaciones relacionadas con la salud ha experimentado un crecimiento significativo, tanto a nivel mundial como en Ecuador, mientras que las redes sociales también han visto cambios en la búsqueda de información sobre temas de salud.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#electivas1">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="electivas1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Más sobre APLICACIONES MOVILES</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/aplicacionesmoviles.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                            <p>En los últimos años, se ha visto un desarrollo constante en el uso de las tecnologías de la información y comunicación, especialmente en el uso de dispositivos móviles para acceso a aplicaciones web y móviles, sean estas relacionadas a comercio electrónico, diversión, productividad y temas relacionadas a la salud. Las aplicaciones móviles en lo que tiene que ver con salud han ido en crecimiento en el mundo y por qué no en el Ecuador, este tipo de aplicaciones son utilizadas por pacientes y por personal prestador de salud, sin embargo, el uso de redes sociales también ha visto cambios en la búsqueda de información respecto a salud. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+                                                      <!--card3-->
+            <div class="container mt-5 mb-5">
+                <div class="card card-custom">
+                    <img src="img/calidad.jpg" class="card-img-top" alt="img ">
+                    <div class="card-body">
+                        <h5 class="card-title">	TÉCNICAS DE EVALUACIÓN DE CALIDAD DE SOFTWARE</h5>
+                        <p class="card-text">Asegurar la calidad y funcionalidad del software implica garantizar su correcta estructura, composición, ejecución e integridad, aunque a veces se ve comprometida por una gestión y desarrollo ineficientes.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#electivas2">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="electivas2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Más sobre TÉCNICAS DE EVALUACIÓN DE CALIDAD DE SOFTWARE</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/calidadsoftware.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                            <p>Asegurar la calidad y funcionalidad de un producto de software es garantizar su correcta estructura, composición, ejecución e integridad, pero en algunos casos estas características se ven afectadas debido a la ineficiente gestión y desarrollo del software. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+                                                      <!--card4-->
+            <div class="container mt-5 mb-5">
+                <div class="card card-custom">
+                    <img src="img/nube.jpg" class="card-img-top" alt="img ">
+                    <div class="card-body">
+                        <h5 class="card-title">COMPUTACION EN LA NUBE</h5>
+                        <p class="card-text">La computación en la nube permite acceso bajo demanda a servicios informáticos configurables, sin necesidad de inversión en equipos físicos o lógicos.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#electivas3">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="electivas3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Más sobre COMPUTACION EN LA NUBE</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/computacionnube.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                            <p>La computación en la nube es el modelo que permite el acceso a una red bajo demanda de un conjunto de servicios informáticos configurables tales como infraestructura, aplicaciones y almacenamiento. En los últimos años este modelo ha permitido a las empresas tener presencia en la Web o simplemente adquirir servicios informáticos a un precio razonable sin necesidad de invertir en la compra de equipos físicos y lógicos</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+                                                                    <!--card5-->
+            <div class="container mt-5 mb-5">
+                <div class="card card-custom">
+                    <img src="img/etica.jpg" class="card-img-top" alt="img ">
+                    <div class="card-body">
+                        <h5 class="card-title">	ETICA Y TECNOLOGIA</h5>
+                        <p class="card-text">El análisis de la relación entre ética y tecnología es esencial en la actualidad, dado que frecuentemente la tecnología se desconecta de las metas humanas legítimas. Este trabajo busca abrir y participar en la discusión sobre el tema, dado que tiene un impacto significativo en todos nosotros.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#electivas4">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="electivas4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Más sobre ETICA Y TECNOLOGIA</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/eticaytecnologia.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                            <p>El análisis de la relación entre la ética y la tecnología debe abordarse como una necesidad de nuestro tiempo, que ha sido lacerado con frecuencia por la desvinculación entre los resultados que la tecnología produce y las metas legítimas del hombre. Este trabajo se ha escrito con este espíritu y con la convicción de que es importante abrir el tema y participar en su discusión, ya que a todos nos afecta. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+                                                                                  <!--card6-->
+            <div class="container mt-5 mb-5">
+                <div class="card card-custom">
+                    <img src="img/cosas.jpg" class="card-img-top" alt="img ">
+                    <div class="card-body">
+                        <h5 class="card-title">	INTERNET DE LAS COSAS</h5>
+                        <p class="card-text">El Internet de las Cosas es la interconexión de objetos cotidianos a través de tecnologías como Bluetooth, RFID, Wi-Fi y sensores, representando una nueva generación de comunicación que avanza rápidamente en el desarrollo tecnológico.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#electivas5">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="electivas5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Más sobre INTERNET DE LAS COSAS</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/internetcosas.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                            <p>El Internet de las Cosas es la interconexión de objetos, cosas, elementos cotidianos a la Internet, a través de diferentes tecnologías como son los dispositivos habilitados con la tecnología inalámbrica abierta como bluetooth, la identificación por radiofrecuencia (RFID), Wi-Fi y los servicios que brindan teléfonos inteligentes, así como sensores y actuadores (dispositivos que permiten la manipulación y control) que están integrados a los objetos. Para muchos se trata de una nueva generación de intercomunicación, en este caso de las cosas de la vida real o cotidianas, y constituye una tendencia hacia la que el desarrollo de la tecnología de telecomunicaciones se está moviendo en forma muy acelerada. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+                                                                                  <!--card7-->
+            <div class="container mt-5 mb-5">
+                <div class="card card-custom">
+                    <img src="img/maqui.jpg" class="card-img-top" alt="img ">
+                    <div class="card-body">
+                        <h5 class="card-title">	MÁQUINAS, PENSAMIENTO MÁGICO E INTELIGENCIA ARTIFICIAL: CTS</h5>
+                        <p class="card-text">Exploración de perspectivas y lógicas diversas, desde la inteligencia artificial hasta la magia, cuestionando la construcción de la realidad en la era tecnológica y reflexionando sobre diferentes formas de conocimiento y su impacto en la sociedad contemporánea.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#electivas6">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="electivas6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Más sobre MÁQUINAS, PENSAMIENTO MÁGICO E INTELIGENCIA ARTIFICIAL: CTS</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/maquinaspensamiento.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                            <p>Busca explorar y debatir diferentes maneras de acercarse a pensamientos y lógicas diferenciales. Así pues, partiendo desde las tecnologías de inteligencia artificial y el contexto de la cuarta revolución industrial, se busca que como ciudadanos cuestionen cómo se construyen los complejos ejercicios de comprensión de la realidad de la cual también nosotros hacemos parte y reflexionar alrededor de distintas formas de conocimiento de la realidad. Aunque nos encontramos bajo la hegemonía de la razón, a tal punto que somos capaces de crear robots e inteligencias artificiales, la magia aun irrumpe, con mayor o menor fuerza, en nuestros mundos. Desde la fantasía y la imaginación, hasta realidades que muchas veces nos parecen irreales, pero pensadas a futuro sus fronteras se hacen más difusas </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+                                                                                                <!--card8-->
+            <div class="container mt-5 mb-5">
+                <div class="card card-custom">
+                    <img src="img/organi.jpg" class="card-img-top" alt="img ">
+                    <div class="card-body">
+                        <h5 class="card-title">ORGANIZACIONES</h5>
+                        <p class="card-text">La evolución organizacional desde modelos cerrados hacia redes abiertas ha transformado el papel de la tecnología, pasando de un determinismo tecnológico a un espacio de negociación y colaboración entre los individuos. En organizaciones horizontales, la tecnología es percibida como algo menos objetivo, influenciado por los valores y la cultura de quienes la utilizan.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#electivas7">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="electivas7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">ORGANIZACIONES</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/organizaciones.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                            <p>La tecnología hace parte de las organizaciones, partiendo de los modelos organizacionales desarrollados a lo largo del siglo XX. De organizaciones cerradas, a otras abiertas tipo red, la tecnología ha pasado de ser el centro del determinismo tecnológico, de dictar toda la base de los procesos internos en una organización, a un espacio de negociación entre las personas que hacen parte de un determinado sistema tecnológico. En este sentido, las organizaciones más horizontales, que han empezado a emerger desde los años 80 del siglo XX, reconocen la tecnología como algo menos objetivo, algo permeado por los valores y la cultura de quienes coordinan y participan en ellas. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+                                                                                                <!--card9-->
+            <div class="container mt-5 mb-5">
+                <div class="card card-custom">
+                    <img src="img/web.jpg" class="card-img-top" alt="img ">
+                    <div class="card-body">
+                        <h5 class="card-title">	PROGRAMACION WEB AVANZADA</h5>
+                        <p class="card-text">Exploración de paradigmas de programación como herramientas para una visión ampliada de los lenguajes, destacando su utilidad y diferencias, junto con un repaso de las últimas tendencias en programación.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#electivas8">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="electivas8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">PROGRAMACION WEB AVANZADA</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/programacionweb.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                            <p>Los Paradigmas de la programación son herramientas que nos aportan una visión de mayor nivel sobre los lenguajes. Además, existen algunos paradigmas de gran interés que deben ser conocidos por los futuros ingenieros. Por este motivo, se pretende dar una visión clara de los paradigmas y su utilidad y desarrollar dos de ellos de gran interés y marcadas diferencias con la forma habitual de trabajar. Por último, se repasarán algunas de las últimas tendencias en programación como complemento a una visión sobre la programación notablemente ampliada</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+                                                                                                <!--card10-->
+            <div class="container mt-5 mb-5">
+                <div class="card card-custom">
+                    <img src="img/com.jpg" class="card-img-top" alt="img ">
+                    <div class="card-body">
+                        <h5 class="card-title">REDES, COMUNIDADES Y PARTICIPACIÓN SOCIAL</h5>
+                        <p class="card-text">Las redes sociales han transformado la comunicación y la participación ciudadana, siendo parte fundamental del paradigma cultural actual, a pesar de cierta intolerancia hacia opiniones divergentes por parte de algunos usuarios.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#electivas9">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="electivas9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Más sobre 7.1.16	REDES, COMUNIDADES Y PARTICIPACIÓN SOCIAL</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/redesparticipacionsocial.jpg" class="img-fluid mb-3 d-flex align-items-lg-center" alt="Algebra">
+                            <p>Las redes sociales han modificado la forma y frecuencia en que los seres humanos se comunican, lo cual también ha originado una forma distinta de participación ciudadana. Este fenómeno, propio de la cibercultura remite a las distintas posturas respecto de influencia de la tecnología en la vida social y a las formas de socialización a través de los sistemas reticulares. Si bien algunos autores (Segerberg y Bennett 2011, Patten, 2013) dudan del verdadero valor de estos nuevos medios en la política, la escuela debiera considerarlos como parte importante del paradigma cultural vigente, especialmente porque se advierte un escaso nivel de tolerancia que muestra un alto número de usuarios frente a opiniones divergentes</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+    <!--Footer-->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>TecnoSistemas</h5>
+                    <p>© 2024 TecnoSistemas. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="politicas.html">Politica De Seguridad</a></li>
+                        <li><a href="quienessomos.html">Quienes Somos</a></li>
+                        <li><a href="contactenos.html">Contacto</a></li>
+                    </ul>
+                </div>  
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <div class="social-icons">
+                        <a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a>
+                        <a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a>
+                        <a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--BootstrapJS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--JS externo-->
+    <script src="js externo/script.js"></script>
+</body>
+</html>  
